@@ -1,0 +1,1 @@
+Welcome to the HomePage! <a href="<?=site_url('client/lists')?>">Click here</a> for clients list.

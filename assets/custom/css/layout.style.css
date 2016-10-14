@@ -1,0 +1,161 @@
+.navbar-layout {
+    height: 70px !important;
+}
+.navbar-layout .navbar-collapse,
+.navbar-layout .navbar-form {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.navbar-layout .navbar-nav>li>a:focus,
+.navbar-layout .navbar-nav>li>a:hover {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+/* Social Icons */
+.navbar-layout .navbar-nav>li>a.facebook:focus,
+.navbar-layout .navbar-nav>li>a.facebook:hover {
+    color: #fff;
+    background-color: #3b5998;
+}
+.navbar-layout .navbar-nav>li>a.linkedin:focus,
+.navbar-layout .navbar-nav>li>a.linkedin:hover {
+    color: #fff;
+    background-color: #0077b5;
+}
+.navbar-layout .navbar-nav>li>a.skype:focus,
+.navbar-layout .navbar-nav>li>a.skype:hover {
+    color: #fff;
+    background-color: #00aff0;
+}
+.navbar-layout .navbar-nav>li>a.twitter:focus,
+.navbar-layout .navbar-nav>li>a.twitter:hover {
+    color: #fff;
+    background-color: #1da1f2;
+}
+.navbar-layout .navbar-nav>li>a.instagram:focus,
+.navbar-layout .navbar-nav>li>a.instagram:hover {
+    color: #fff;
+    background-color: #405de6;
+}
+
+.pagination>.deadlink>a,
+.pagination>.deadlink>a:focus,
+.pagination>.deadlink>a:hover,
+.pagination>.deadlink>span,
+.pagination>.deadlink>span:focus,
+.pagination>.deadlink>span:hover {
+    color: #777;
+    cursor: default;
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+/* Tooltip-success */
+.tooltip-success+.tooltip>.tooltip-inner,
+.tooltip.tooltip-success>.tooltip-inner {
+    background-color: #5cb85c;
+    text-shadow: 1px 1px 0 rgba(60, 100, 20, .3)
+}
+.tooltip-success+.tooltip.top .tooltip-arrow,
+.tooltip.tooltip-success.top .tooltip-arrow {
+    border-top-color: #5cb85c;
+    -moz-border-top-colors: #5cb85c
+}
+.tooltip-success+.tooltip.right .tooltip-arrow,
+.tooltip.tooltip-success.right .tooltip-arrow {
+    border-right-color: #5cb85c;
+    -moz-border-right-colors: #5cb85c
+}
+.tooltip-success+.tooltip.left .tooltip-arrow,
+.tooltip.tooltip-success.left .tooltip-arrow {
+    border-left-color: #5cb85c;
+    -moz-border-left-colors: #5cb85c
+}
+.tooltip-success+.tooltip.bottom .tooltip-arrow,
+.tooltip.tooltip-success.bottom .tooltip-arrow {
+    border-bottom-color: #5cb85c;
+    -moz-border-bottom-colors: #5cb85c
+}
+/* Tooltip-info */
+.tooltip-info+.tooltip>.tooltip-inner,
+.tooltip.tooltip-info>.tooltip-inner {
+    background-color: #5bc0de;
+    text-shadow: 1px 1px 0 rgba(60, 100, 20, .3)
+}
+.tooltip-info+.tooltip.top .tooltip-arrow,
+.tooltip.tooltip-info.top .tooltip-arrow {
+    border-top-color: #5bc0de;
+    -moz-border-top-colors: #5bc0de
+}
+.tooltip-info+.tooltip.right .tooltip-arrow,
+.tooltip.tooltip-info.right .tooltip-arrow {
+    border-right-color: #5bc0de;
+    -moz-border-right-colors: #5bc0de
+}
+.tooltip-info+.tooltip.left .tooltip-arrow,
+.tooltip.tooltip-info.left .tooltip-arrow {
+    border-left-color: #5bc0de;
+    -moz-border-left-colors: #5bc0de
+}
+.tooltip-info+.tooltip.bottom .tooltip-arrow,
+.tooltip.tooltip-info.bottom .tooltip-arrow {
+    border-bottom-color: #5bc0de;
+    -moz-border-bottom-colors: #5bc0de
+}
+/* Tooltip-danger */
+.tooltip-danger+.tooltip>.tooltip-inner,
+.tooltip.tooltip-danger>.tooltip-inner {
+    background-color: #d9534f;
+    text-shadow: 1px 1px 0 rgba(60, 100, 20, .3)
+}
+.tooltip-danger+.tooltip.top .tooltip-arrow,
+.tooltip.tooltip-danger.top .tooltip-arrow {
+    border-top-color: #d9534f;
+    -moz-border-top-colors: #d9534f
+}
+.tooltip-danger+.tooltip.right .tooltip-arrow,
+.tooltip.tooltip-danger.right .tooltip-arrow {
+    border-right-color: #d9534f;
+    -moz-border-right-colors: #d9534f
+}
+.tooltip-danger+.tooltip.left .tooltip-arrow,
+.tooltip.tooltip-danger.left .tooltip-arrow {
+    border-left-color: #d9534f;
+    -moz-border-left-colors: #d9534f
+}
+.tooltip-danger+.tooltip.bottom .tooltip-arrow,
+.tooltip.tooltip-danger.bottom .tooltip-arrow {
+    border-bottom-color: #d9534f;
+    -moz-border-bottom-colors: #d9534f
+}
+
+.dialog-10 .modal-dialog {
+    width: 10%;
+} .dialog-20 .modal-dialog {
+    width: 20%;
+} .dialog-30 .modal-dialog {
+    width: 30%;
+} .dialog-40 .modal-dialog {
+    width: 40%;
+} .dialog-50 .modal-dialog {
+    width: 50%;
+} .dialog-60 .modal-dialog {
+    width: 60%;
+} .dialog-70 .modal-dialog {
+    width: 70%;
+} .dialog-80 .modal-dialog {
+    width: 80%;
+} .dialog-90 .modal-dialog {
+    width: 90%;
+} 
+.bootbox-confirm .modal-dialog {
+    width: 20%;
+}
+
+.form-msg {
+    color: #a94442;
+    font-size: 12px;
+}
+.hr-line-dashed { 
+}

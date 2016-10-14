@@ -1,0 +1,30 @@
+{
+  "name": "CSV Clients",
+  "authors": [
+    "Puncoz Nepal <info@puncoz.com>"
+  ],
+  "description": "Coding task for Software Engineer",
+  "main": "index.php",
+  "keywords": [
+    "coding, task, csv, clients"
+  ],
+  "license": "MIT",
+  "homepage": "index.php",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "html5shiv": "^3.7.3",
+    "respond": "^1.4.2",
+    "font-awesome": "^4.6.3",
+    "animate.css": "^3.5.2",
+    "bootbox.js": "bootbox#^4.4.0",
+    "chosen": "^1.6.2",
+    "bootstrap-datepicker": "^1.6.4"
+  }
+}
