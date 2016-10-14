@@ -16,7 +16,7 @@ This task is to build a part of client section of a system. It is build in CodeI
 	1. Bootstrap Datepicker
 	
 ### Installation
-...
+```
 1. Download / clone the repo
 2. bower install
-...
+```
