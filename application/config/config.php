@@ -23,7 +23,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-echo $_SERVER['SERVER_NAME'];exit;
 if ($_SERVER['SERVER_NAME'] == 'coding-task-ci.herokuapp.com') {
 	$config['base_url'] = 'https://coding-task-ci.herokuapp.com/';
 } else {
