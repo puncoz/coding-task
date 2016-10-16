@@ -1,4 +1,8 @@
-<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
+<?php
+
+if (!defined('BASEPATH')) {
+    exit('No direct script access allowed');
+}
 
 function assets($path)
 {
@@ -7,7 +11,7 @@ function assets($path)
 
 function url_encrypt($string)
 {
-    $encrypt_method = "AES-256-CBC";
+    $encrypt_method = 'AES-256-CBC';
     $secret_key = 'ZwZSUU50OW2doUTXNHSUNYaGZOWUwQ0c3Z2doUwQ0cNYUU3ZUT09SNHX5wZSUaG9';
     $secret_iv = 'Zw0c3Z2d0OW2doUTXNoUwQ0cNYUU3ZUT09SU5HSUUwQUaG9NYaGNHX5wZSZSUZOWZw0c3Z2d5wZSZSUZOWoUwQ0cN0OWYUU3ZUT09SU5HSUUwQUaG2doUTXN9NYaGNHX';
 
@@ -22,7 +26,7 @@ function url_encrypt($string)
 
 function url_decrypt($enc_string)
 {
-    $encrypt_method = "AES-256-CBC";
+    $encrypt_method = 'AES-256-CBC';
     $secret_key = 'ZwZSUU50OW2doUTXNHSUNYaGZOWUwQ0c3Z2doUwQ0cNYUU3ZUT09SNHX5wZSUaG9';
     $secret_iv = 'Zw0c3Z2d0OW2doUTXNoUwQ0cNYUU3ZUT09SU5HSUUwQUaG9NYaGNHX5wZSZSUZOWZw0c3Z2d5wZSZSUZOWoUwQ0cN0OWYUU3ZUT09SU5HSUUwQUaG2doUTXN9NYaGNHX';
 

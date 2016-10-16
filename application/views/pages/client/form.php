@@ -2,12 +2,12 @@
     <div class="col-xs-12">
 
         <?php
-        $attributes = array(
+        $attributes = [
                         'class' => 'form-horizontal',
                         'role'  => 'form',
                         'name'  => 'add_edit_form',
-                        'id'    => 'add_edit_form'
-                    );
+                        'id'    => 'add_edit_form',
+                    ];
         $action = site_url('client/'.(isset($edit) ? 'edit/'.url_encrypt($id) : 'add'));
         echo form_open($action, $attributes);
         ?>
@@ -30,8 +30,8 @@
                     <div class="col-sm-9">
                         <select class="form-control select-chosen required" name="GENDER" id="GENDER" data-placeholder="SELECT">
                             <option value=""></option>
-                            <option value="Male" <?=(isset($edit)&&$edit[1]=='Male'?'selected':'')?>>Male</option>
-                            <option value="Female" <?=(isset($edit)&&$edit[1]=='Female'?'selected':'')?>>Female</option>
+                            <option value="Male" <?=(isset($edit) && $edit[1] == 'Male' ? 'selected' : '')?>>Male</option>
+                            <option value="Female" <?=(isset($edit) && $edit[1] == 'Female' ? 'selected' : '')?>>Female</option>
                         </select>
                         <span class="form-msg" style="display: none"></span>
                     </div>
@@ -61,9 +61,9 @@
                     <div class="col-sm-9">
                         <select class="form-control select-chosen required" name="DEF_CONTACT" id="DEF_CONTACT" data-placeholder="SELECT">
                             <option value=""></option>
-                            <option value="Phone" <?=(isset($edit)&&$edit[4]=='Phone'?'selected':'')?>>Phone</option>
-                            <option value="Email" <?=(isset($edit)&&$edit[4]=='Email'?'selected':'')?>>Email</option>
-                            <option value="None" <?=(isset($edit)&&$edit[4]=='None'?'selected':'')?>>None</option>
+                            <option value="Phone" <?=(isset($edit) && $edit[4] == 'Phone' ? 'selected' : '')?>>Phone</option>
+                            <option value="Email" <?=(isset($edit) && $edit[4] == 'Email' ? 'selected' : '')?>>Email</option>
+                            <option value="None" <?=(isset($edit) && $edit[4] == 'None' ? 'selected' : '')?>>None</option>
                         </select>
                         <span class="form-msg" style="display: none"></span>
                     </div>

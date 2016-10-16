@@ -1,5 +1,6 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -19,9 +20,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Hooks for DevelBar [CI Developers Bar]
 |
 */
-$hook['display_override'][] = array(
-	'class'  	=> 'Develbar',
-    'function' 	=> 'debug',
-    'filename' 	=> 'Develbar.php',
-    'filepath' 	=> 'third_party/DevelBar/hooks'
-);
+$hook['display_override'][] = [
+    'class'       => 'Develbar',
+    'function'    => 'debug',
+    'filename'    => 'Develbar.php',
+    'filepath'    => 'third_party/DevelBar/hooks',
+];

@@ -5,12 +5,12 @@
         <div class="scroll">
             <?php
             foreach ($session as $key => $val) {
-                if (is_array($val) OR is_object($val)) {
+                if (is_array($val) or is_object($val)) {
                     $val = print_r($val, true);
                 }
                 echo '<p>';
-                echo '<span class="left-col" style="width:45%"><strong>' . $key . ':</strong></span>';
-                echo '<span class="right-col" style="width:55%"><pre>' . htmlentities($val) . '</pre></span>';
+                echo '<span class="left-col" style="width:45%"><strong>'.$key.':</strong></span>';
+                echo '<span class="right-col" style="width:55%"><pre>'.htmlentities($val).'</pre></span>';
                 echo '</p>';
             }
             ?>

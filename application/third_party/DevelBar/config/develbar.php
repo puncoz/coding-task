@@ -1,4 +1,6 @@
-<?php defined('BASEPATH') or die('No direct script access.');
+<?php
+
+defined('BASEPATH') or die('No direct script access.');
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +21,7 @@ $config['enable_develbar'] = (ENVIRONMENT !== 'production');
 | if this option is set to TRUE, it will slow down the page loading
 |
 */
-$config['check_update'] = FALSE;
+$config['check_update'] = false;
 
 $config['documentation_link'] = 'http://www.codeigniter.com/userguide3/';
 
@@ -41,16 +43,16 @@ $config['develbar_download_link'] = 'https://github.com/JCSama/CodeIgniter-devel
 | This option allows you to enable specific sections into the Developer's Toolbar
 |
 */
-$config['develbar_sections'] = array(
-	'Benchmarks' 		=> TRUE,
-    'Memory Usage'	   	=> TRUE,
-    'Request'   		=> TRUE,
-    'Database'			=> TRUE,
-    'Hooks'				=> TRUE,
-	'Config' 			=> TRUE,
-    'Session' 			=> TRUE,
-    'Views' 			=> TRUE,
-    'Models' 			=> TRUE,
-    'Libraries'			=> TRUE,
-    'Helpers' 			=> TRUE,
-);
+$config['develbar_sections'] = [
+    'Benchmarks'           => true,
+    'Memory Usage'         => true,
+    'Request'              => true,
+    'Database'             => true,
+    'Hooks'                => true,
+    'Config'               => true,
+    'Session'              => true,
+    'Views'                => true,
+    'Models'               => true,
+    'Libraries'            => true,
+    'Helpers'              => true,
+];

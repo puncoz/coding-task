@@ -1,22 +1,25 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed');
+<?php
+
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /**
-* Client Model
-*/
+ * Client Model.
+ */
 class Clientmodel extends CI_Model
 {
     private $csvFile = '';
 
-    function __construct()
+    public function __construct()
     {
         $this->csvFile = $this->config->item('client_csv');
     }
 
-    public function getCsvFileDir() {
+    public function getCsvFileDir()
+    {
         return $this->csvFile;
     }
 
-    public function addClient($data=[])
+    public function addClient($data = [])
     {
         if (empty($data)) {
             return false;
@@ -38,14 +41,14 @@ class Clientmodel extends CI_Model
         if (!file_exists($this->csvFile)) {
             return false;
         }
-        
+
         $fp = fopen($this->csvFile, 'r');
         if ($fp === false) {
             return false;
         }
 
         $clients = [];
-        while(($client = fgetcsv($fp)) !== FALSE) {
+        while (($client = fgetcsv($fp)) !== false) {
             $clients[] = $client;
         }
         fclose($fp);
@@ -56,6 +59,7 @@ class Clientmodel extends CI_Model
     public function getClientById($id)
     {
         $clients = $this->getClients();
+
         return isset($clients[$id]) ? $clients[$id] : false;
     }
 }

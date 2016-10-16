@@ -8,27 +8,27 @@
 <title><?=$pageInfo->title.' || '.$this->lang->line('software_acronym') ?></title>
 
 <?php
-$metaData = array(
-            array(
+$metaData = [
+            [
                 'name'      => 'robots',
-                'content'   => 'index, follow'
-            ),
-            array(
+                'content'   => 'index, follow',
+            ],
+            [
                 'name'      => 'keywords',
-                'content'   => $this->lang->line('software_acronym')
-            ),
-            array(
+                'content'   => $this->lang->line('software_acronym'),
+            ],
+            [
                 'name'      => 'description',
-                'content'   => $this->lang->line('software_name')
-            ),
-            array(
+                'content'   => $this->lang->line('software_name'),
+            ],
+            [
                 'name'      => 'application-name',
-                'content'   => str_replace(' ', '-', strtolower($this->lang->line('software_acronym')))
-            ),
-            array(
+                'content'   => str_replace(' ', '-', strtolower($this->lang->line('software_acronym'))),
+            ],
+            [
                 'name'      => 'author',
-                'content'   => $this->lang->line('software_author')
-            )
-        );
+                'content'   => $this->lang->line('software_author'),
+            ],
+        ];
 echo meta($metaData);
 ?>
