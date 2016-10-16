@@ -26,7 +26,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 */
 if ($_SERVER['SERVER_NAME'] == 'coding-task-ci.herokuapp.com') {
     $config['base_url'] = 'https://coding-task-ci.herokuapp.com/';
-} else if ($_SERVER['SERVER_NAME'] == 'coding-task-ci.gopagoda.io') {
+} elseif ($_SERVER['SERVER_NAME'] == 'coding-task-ci.gopagoda.io') {
     $config['base_url'] = 'http://coding-task-ci.gopagoda.io/';
 } else {
     $config['base_url'] = '';
