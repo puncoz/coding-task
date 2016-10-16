@@ -1,5 +1,5 @@
 <img src="<?php echo $icon ?>" title="<?php echo lang('request') ?>"
-     alt="<?php echo lang('request') ?>"/> <?php echo lang('request') . ' : ' . $controller . '/' . $action ?>
+     alt="<?php echo lang('request') ?>"/> <?php echo lang('request').' : '.$controller.'/'.$action ?>
 <div class="detail request">
     <p>
         <span class="left-col"><?php echo lang('method') ?> :</span>

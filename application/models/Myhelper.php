@@ -1,23 +1,26 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed');
+<?php
+
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /**
-*   Myhelper Model
-*/
+ *   Myhelper Model.
+ */
 class Myhelper extends CI_Model
 {
-    
-    function __construct()
+    public function __construct()
     {
-        $time_zone      = $this->config->item('default_timezone');
+        $time_zone = $this->config->item('default_timezone');
         date_default_timezone_set($time_zone);
     }
 
-    public function output($page, $viewData = array(), $layout = 'layout.index')
+    public function output($page, $viewData = [], $layout = 'layout.index')
     {
-        if (!is_null($page)) $viewData['main_body_content'] = $this->load->view('pages/'.$page, $viewData, TRUE);
-        $this->load->view(TMPL.'/'.$layout.'.php',$viewData);
+        if (!is_null($page)) {
+            $viewData['main_body_content'] = $this->load->view('pages/'.$page, $viewData, true);
+        }
+        $this->load->view(TMPL.'/'.$layout.'.php', $viewData);
     }
-    
+
     public function outputJSON($array, $header_status = 200)
     {
         $this->output
@@ -30,25 +33,25 @@ class Myhelper extends CI_Model
 
     public function getFormError()
     {
-        $form_errors = array();
+        $form_errors = [];
         foreach ($_POST as $key => $value) {
             $errMsg = form_error($key);
-            if( !empty($errMsg) ) {
-                $form_errors[] = array(
+            if (!empty($errMsg)) {
+                $form_errors[] = [
                                     'id'        => $key,
-                                    'message'   => $errMsg
-                                );
+                                    'message'   => $errMsg,
+                                ];
             }
         }
-        $form_errors[] = array(
+        $form_errors[] = [
                             'id'        => $this->security->get_csrf_token_name(),
-                            'message'   => $this->security->get_csrf_hash()
-                        );
+                            'message'   => $this->security->get_csrf_hash(),
+                        ];
 
-        return array(
+        return [
             'status'    => 'error',
             'data'      => $form_errors,
-            'message'   => 'form_error'
-        );
+            'message'   => 'form_error',
+        ];
     }
 }

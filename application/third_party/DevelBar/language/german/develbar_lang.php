@@ -1,4 +1,6 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed');
+<?php
+
+defined('BASEPATH') or exit('No direct script access allowed');
 
 $lang['version_not_supported'] = 'CodeIgniter-Version wird nicht durch DevelBar unterstützt, überprüfen Sie bitte %s für Update.';
 $lang['sec'] = 'sec';
