@@ -20,3 +20,8 @@ This task is to build a part of client section of a system. It is build in CodeI
 1. Download / clone the repo
 2. bower install
 ```
+
+### Demo Link
+
+1. [Heroku](https://coding-task-ci.herokuapp.com/)
+2. [Pagoda Box](http://coding-task-ci.gopagoda.io/)
